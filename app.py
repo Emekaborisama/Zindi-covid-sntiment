@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.feature_extraction.text import CountVectorizer 
 cv = CountVectorizer(min_df = 0.1, max_df = 0.9)
 
-model = pickle.load(open('/model/model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 
 st.cache()
