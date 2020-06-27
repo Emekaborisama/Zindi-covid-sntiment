@@ -1,10 +1,3 @@
-python == 3.7
 pandas 
 streamlit
-streamlit as st
-pickle 
-pandas as pd
-re  
-nltk
-nltk.download('punkt')
-nltk.download('wordnet')
+numpy
