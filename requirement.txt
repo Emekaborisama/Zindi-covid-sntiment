@@ -1,5 +1,5 @@
-pip install numpy==1.15.0
-pip install streamlit==0.52.2
-pip install pandas==0.23.4
-pip install nltk
-pip install pickle
+numpy==1.15.0
+streamlit==0.52.2
+pandas==0.23.4
+nltk
+pickle
