@@ -13,7 +13,7 @@ ADD . /app
 RUN pip install -r requirements.txt
 
 # copying all files over
-COPY . /app
+COPY . /app.py
 
 # Expose port 
 ENV PORT 8501
