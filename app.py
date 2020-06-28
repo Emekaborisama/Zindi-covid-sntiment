@@ -1,19 +1,8 @@
 import streamlit as st
 import pickle 
 import pandas as pd
-import re  
 import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
-from nltk.tag import pos_tag
-from nltk.stem.wordnet import WordNetLemmatizer
-nltk.download('stopwords')
-from nltk.corpus import stopwords
-from sklearn import metrics
-from sklearn.metrics import accuracy_score
-from sklearn.feature_extraction.text import CountVectorizer 
-cv = CountVectorizer(min_df = 0.1, max_df = 0.9)
+
 
 model = pickle.load(open('model.pkl', 'rb'))
 
