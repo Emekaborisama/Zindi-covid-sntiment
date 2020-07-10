@@ -2,6 +2,7 @@ import streamlit as st
 import pickle 
 import pandas as pd
 import nltk
+nltk.download('punkt')
 
 
 model = pickle.load(open('model.pkl', 'rb'))
