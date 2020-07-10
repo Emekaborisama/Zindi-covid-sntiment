@@ -8,5 +8,5 @@ This is a text detection app build and deploy on Streamlit and Heroku
 To run this app locaclly use 
 
 `
-streamlit run https://github.com/Emekaborisama/Covid_text_detection/blob/master/app.py
+https://covidapptextd.herokuapp.com/
 `
