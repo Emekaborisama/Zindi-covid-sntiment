@@ -16,9 +16,7 @@ st.cache()
 def data_pro(text):
     df = {'text':[text]}
     df = pd.DataFrame(df)
-    #return df
-
-#df = data_pro(text)
+    return df
 
 tokens = []
 def num_token(df):
