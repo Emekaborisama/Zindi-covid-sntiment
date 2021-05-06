@@ -3,9 +3,12 @@ import pickle
 import pandas as pd
 import nltk
 nltk.download('punkt')
+import os
 
 
-model = pickle.load(open('model.pkl', 'rb'))
+mm = open('model.pkl', 'rb')
+model = pickle.load(mm)
+mm.close()
 
 
 st.cache()
