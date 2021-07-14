@@ -9,15 +9,16 @@ import json
 
 
 
-def endpoint1(text):
-    url = "https://ilistener2-emekaborisama.cloud.okteto.net/named_entity"
-    payload={'text': text}
+def endpoint1(texte):
+    url = "https://ilistener2-emeka101.cloud.okteto.net/named_entity"
+    payload={'text': texte}
     files=[
 
     ]
     headers = {}
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
     return (response.text)
+
 
 
 
@@ -28,6 +29,9 @@ html_temp = """
 </div>
 """
 st.markdown(html_temp, unsafe_allow_html = True)
+
+
+
 
 
 #st.cache()
@@ -42,7 +46,7 @@ hide_streamlit_style = """
 input_text = st.text_area("text")
 
 if st.button("NER"):
-    json_file = endpoint1(text = input_text)
+    json_file = endpoint1(texte = input_text)
     st.code(json_file, language = 'python')
 
 
