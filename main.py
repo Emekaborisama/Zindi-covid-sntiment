@@ -10,7 +10,7 @@ import json
 
 
 def endpoint1(texte):
-    url = "https://ilistener2-emeka101.cloud.okteto.net/named_entity"
+    url = "https://ilistener2-emekaborisama.cloud.okteto.net/named_entity"
     payload={'text': texte}
     files=[
 
